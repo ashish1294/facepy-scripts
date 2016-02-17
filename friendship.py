@@ -153,8 +153,6 @@ def process_all_messages(messages):
       friend_name = chat['to']['data'][1]['name'].encode('utf-8')
       if friend_name == OWNER_NAME:
         friend_name = chat['to']['data'][0]['name'].encode('utf-8')
-      #if friend_name == 'Vinita Hissaria':
-      #  continue
       success = False
 
       while not success:
